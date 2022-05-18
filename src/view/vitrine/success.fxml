@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="success" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="417.0" style="-fx-background-color: #DDDDDDDD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.vitrine.InscriptionController">
+   <children>
+      <Label layoutX="47.0" layoutY="261.0" prefHeight="69.0" prefWidth="323.0" text="Vous été bien inscrit" textFill="#1e0303">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="52.0" fitWidth="137.0" layoutX="146.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/f1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelImage" layoutX="58.0" layoutY="456.0" prefHeight="21.0" prefWidth="323.0" textFill="WHITE" />
+      <Label layoutX="133.0" layoutY="196.0" text="Succès">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="56.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

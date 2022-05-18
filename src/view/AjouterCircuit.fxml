@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="body" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="930.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AjouterCircuitController">
+   <children>
+      <Label layoutX="345.0" layoutY="55.0" text="Ajouter Circuit" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="159.0" text="Nom :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="489.0" layoutY="156.0" text="Pays :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="487.0" layoutY="242.0" text="Course distance :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="495.0" layoutY="335.0" text="Longeur :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="252.0" text="Capacite :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfnom" layoutX="156.0" layoutY="158.0" onKeyReleased="#verifnom" prefHeight="31.0" prefWidth="225.0" />
+      <TextField fx:id="tfCoursedistance" layoutX="651.0" layoutY="240.0" onKeyReleased="#verifcd" prefHeight="31.0" prefWidth="225.0" />
+      <TextField fx:id="tfCapacite" layoutX="157.0" layoutY="246.0" onKeyReleased="#verifdesc" prefHeight="31.0" prefWidth="225.0" />
+      <Button fx:id="add" layoutX="715.0" layoutY="523.0" mnemonicParsing="false" onAction="#AjouterCircuit" prefHeight="49.0" prefWidth="125.0" style="-fx-background-color: #FFFFFFFF; -fx-border-color: #FE2E02;" text="Ajouter" textFill="#fe2e02">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfpays" layoutX="650.0" layoutY="156.0" onKeyReleased="#verifpays" prefHeight="31.0" prefWidth="225.0" />
+      <TextField fx:id="tflongeur" layoutX="652.0" layoutY="331.0" onKeyReleased="#veriflong" prefHeight="31.0" prefWidth="225.0" />
+      <Label layoutX="39.0" layoutY="341.0" text="Description :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="tadesc" layoutX="153.0" layoutY="342.0" prefHeight="90.0" prefWidth="274.0" />
+      <Button fx:id="retourc" layoutX="28.0" layoutY="22.0" mnemonicParsing="false" onAction="#Retour" prefHeight="20.0" prefWidth="66.0" style="-fx-background-color: #FE2E02; -fx-border-color: #FE2E02;" text="&lt;" textFill="#fcfbfa">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imgNom" fitHeight="39.0" fitWidth="38.0" layoutX="389.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgPays" fitHeight="39.0" fitWidth="38.0" layoutX="883.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ImgCourse" fitHeight="39.0" fitWidth="38.0" layoutX="883.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ImgCap" fitHeight="39.0" fitWidth="38.0" layoutX="390.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ImgLong" fitHeight="39.0" fitWidth="38.0" layoutX="883.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="494.0" layoutY="411.0" text="Image :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="filechooser" layoutX="652.0" layoutY="409.0" mnemonicParsing="false" onAction="#ChooseFile" prefHeight="31.0" prefWidth="135.0" style="-fx-background-color: #170a6e;" text="choisir" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="myFile" layoutX="796.0" layoutY="428.0" />
+      <Label fx:id="file" layoutX="58.0" layoutY="478.0" opacity="0.0" text="Label" />
+      <ImageView fx:id="image" fitHeight="90.0" fitWidth="135.0" layoutX="753.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgFile" fitHeight="31.0" fitWidth="35.0" layoutX="884.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

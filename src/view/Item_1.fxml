@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Item" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="500.0" style="-fx-background-color: #DDDDDDDD;" styleClass="team-item" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Item_1Controller">
+   <children>
+      <VBox layoutX="82.0" layoutY="20.0" prefHeight="156.0" prefWidth="373.0">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="373.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="17.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="388.0">
+                     <children>
+                        <ImageView fx:id="imggg" fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label prefHeight="21.0" prefWidth="26.0" />
+                        <Label prefHeight="53.0" prefWidth="85.0" text="Nom :   ">
+                           <font>
+                              <Font name="Ebrima Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nomc" prefHeight="55.0" prefWidth="220.0" text="a">
+                           <font>
+                              <Font name="Ebrima Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="49.0" prefWidth="373.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="15.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="388.0">
+                     <children>
+                        <ImageView fx:id="img" fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label prefHeight="21.0" prefWidth="20.0" />
+                        <Label prefHeight="49.0" prefWidth="85.0" text="Date :">
+                           <font>
+                              <Font name="Ebrima Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="datec" prefHeight="74.0" prefWidth="188.0" text="b">
+                           <font>
+                              <Font name="Ebrima Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="373.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="24.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="399.0">
+                     <children>
+                        <ImageView fx:id="imgg" fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label prefHeight="21.0" prefWidth="27.0" />
+                        <Label prefHeight="45.0" prefWidth="87.0" text="Circuit : ">
+                           <font>
+                              <Font name="Ebrima Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="circuit" prefHeight="69.0" prefWidth="220.0" text="v">
+                           <font>
+                              <Font name="Ebrima Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label fx:id="id" layoutX="8.0" layoutY="10.0" opacity="0.0" />
+      <Button layoutX="203.0" layoutY="185.0" mnemonicParsing="false" onAction="#AcheterTicket" prefHeight="45.0" prefWidth="131.0" style="-fx-background-color: #FFFFFFFF; -fx-border-color: #ff0505; -fx-border-radius: 5;" text="Acheter ticket" textFill="#ff0505">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label fx:id="cid" layoutX="14.0" layoutY="10.0" opacity="0.0" />
+   </children>
+</AnchorPane>
